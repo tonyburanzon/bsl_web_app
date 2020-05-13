@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
   web:
@@ -8,5 +8,6 @@ services:
       - .:/usr/src/app/
     ports:
       - 3000:3000
+    stdin_open: true
     user: 1000:1000
     command: npm start
