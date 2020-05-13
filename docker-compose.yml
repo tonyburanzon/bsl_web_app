@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: bsl_web_app
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - 3000:3000
+    user: 1000:1000
+    command: npm start
